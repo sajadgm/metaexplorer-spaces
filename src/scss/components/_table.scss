@@ -1,0 +1,22 @@
+.p-datatable {
+  .p-inputtext {
+    padding: 0.45rem;
+  }
+  .p-datatable-thead > tr > th,
+  .p-datatable-tbody > tr > td {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+  .p-checkbox {
+    width: 17px;
+    height: 17px;
+    .p-checkbox-box {
+      width: 17px;
+      height: 17px;
+      border-radius: 4px;
+      .p-checkbox-icon {
+        font-size: 10px;
+      }
+    }
+  }
+}

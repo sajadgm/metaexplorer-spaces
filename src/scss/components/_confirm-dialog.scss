@@ -1,0 +1,10 @@
+.p-dialog.p-confirm-dialog {
+  .p-dialog-footer {
+    button {
+      flex-direction: row-reverse;
+    }
+  }
+  .p-dialog-content {
+    padding: 2rem;
+  }
+}

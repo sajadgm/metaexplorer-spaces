@@ -1,0 +1,89 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./src/",
+    "paths": {
+      "@core/*": [
+        "app/core/*"
+      ],
+      "@store/*": [
+        "app/store/*"
+      ],
+      "@authentication/*": [
+        "app/authentication/*"
+      ],
+      "@enforceChangePassword/*": [
+        "app/enforce-change-password/*"
+      ],
+      "@IAM/*": [
+        "app/identity-and-access/*"
+      ],
+      "@accounting/*": [
+        "app/accounting/*"
+      ],
+      "@ordering/*": [
+        "app/ordering/*"
+      ],
+      "@reference/*": [
+        "app/reference/*"
+      ],
+      "@depositAndWithdrawal/*": [
+        "app/deposit-and-withdrawal/*"
+      ],
+      "@clearSettlement/*": [
+        "app/clear-settlement/*"
+      ],
+      "@holdingManagement/*": [
+        "app/holding-management/*"
+      ],
+      "@customerManagement/*": [
+        "app/customer-management/*"
+      ],
+      "@main/*": [
+        "app/main/*"
+      ],
+      "@services/*": [
+        "app/services/*"
+      ],
+      "@environment/*": [
+        "environments/*"
+      ],
+      "@shared/*": [
+        "app/shared/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@app/*": [
+        "app/*"
+      ]
+    },
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "es2020",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "useDefineForClassFields": false
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

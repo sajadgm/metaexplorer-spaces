@@ -1,0 +1,18 @@
+.p-field {
+  margin-bottom: 1.2rem;
+  .p-element:not(.p-button) {
+    width: 100%;
+  }
+  .p-dropdown {
+    width: 100%;
+  }
+  p-overlay.p-element {
+    width: auto !important;
+  }
+}
+.p-field > label {
+  @include styleclass('w-full block text-900 font-medium mb-2');
+  span {
+    color: #ea5455;
+  }
+}

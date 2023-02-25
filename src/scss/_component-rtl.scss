@@ -1,0 +1,476 @@
+/*WRITE IN SCSS PLEASE!!! NO CSS!! */
+
+.hg-theme-default {
+  .hg-row {
+    .hg-button {
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+
+    & > div {
+      &:last-child {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.p-float-label {
+  & > label {
+    right: 0.75rem !important;
+  }
+}
+
+.p-tree {
+  font-size: 1.1rem;
+  transition: all 0.15s ease-in;
+  .p-tree-filter-container {
+    .p-tree-filter {
+      padding-right: 1rem;
+    }
+    .p-tree-filter-icon {
+      right: unset;
+      left: 0.75rem;
+    }
+  }
+
+  .p-tree-container {
+    .p-treenode {
+      .p-treenode-content.p-treenode-selectable {
+        cursor: pointer;
+        transition: all 0.15s ease-in;
+
+        &.p-highlight {
+          color: #00b199;
+        }
+
+        .tree-node-box {
+          &__favorite-btn {
+            position: absolute;
+            left: 0;
+            z-index: 2;
+
+            .p-button-icon {
+              font-size: 1.2rem !important;
+            }
+          }
+        }
+
+        &:focus {
+          background-color: #00b199;
+          &:hover {
+            background-color: #00b199;
+            color: #ffffff;
+          }
+
+          .p-tree-toggler {
+            color: #ffffff;
+
+            &:enabled:hover {
+              color: #ffffff;
+            }
+          }
+
+          .p-treenode-icon {
+            color: #ffffff;
+          }
+
+          .p-treenode-label {
+            color: #ffffff;
+          }
+
+          .tree-node-box {
+            &__label {
+              color: #ffffff !important;
+            }
+
+            &__favorite-btn {
+              color: #ffffff;
+              position: absolute;
+              left: 0;
+              z-index: 2;
+
+              .p-button-icon {
+                font-size: 1.2rem !important;
+              }
+            }
+          }
+        }
+
+        .p-tree-toggler {
+          margin-right: 0;
+
+          &:enabled:hover {
+            background: transparent !important;
+          }
+
+          &:focus {
+            box-shadow: none !important;
+          }
+
+          .p-tree-toggler-icon.pi-chevron-down {
+            margin-top: 3px;
+          }
+        }
+
+        .pi-chevron-right {
+          //transform: rotate(180deg);
+        }
+
+        .p-treenode-icon {
+          margin-left: 0.6rem;
+          margin-right: initial;
+          margin-top: 3px;
+          display: flex;
+          align-items: center;
+        }
+
+        .fa-regular {
+          font-size: 1.4rem;
+        }
+
+        .p-treenode-label {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .p-treenode-children {
+    padding: initial;
+    padding-right: 1rem;
+  }
+}
+
+.p-dropdown {
+  &.p-dropdown-clearable {
+    .p-dropdown-label {
+      padding-left: 1.5rem;
+      padding-right: 0.8rem;
+    }
+  }
+
+  .p-dropdown-clear-icon {
+    right: auto;
+    left: 2.357rem;
+  }
+}
+
+.p-dropdown-panel {
+  .p-dropdown-header {
+    .p-dropdown-filter {
+      margin-right: 0;
+    }
+  }
+}
+
+.p-checkbox-label {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.p-treeselect-panel {
+  left: initial !important;
+  right: 0;
+}
+
+p-treeselect {
+  &.p-treeselect-clearable {
+    .p-treeselect-clear-icon {
+      right: initial;
+      left: 2.357rem;
+    }
+  }
+}
+
+.p-dialog {
+  .p-dialog-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
+
+p-editor {
+  text-align: left;
+}
+
+.p-confirm-popup {
+  .p-confirm-popup-footer {
+    direction: ltr;
+  }
+
+  .p-confirm-popup-message {
+    margin-right: 0.5rem;
+    margin-left: 0;
+  }
+}
+
+.p-toast {
+  .p-toast-message {
+    .p-toast-message-content {
+      .p-toast-message-text {
+        margin: 0 1rem 0 0;
+      }
+    }
+  }
+}
+
+.p-chip {
+  .pi-chip-remove-icon {
+    margin-left: 0;
+    margin-right: 0.5rem;
+  }
+}
+
+.p-radiobutton-label {
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+
+button {
+  &.p-message-close {
+    &.p-link {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+}
+
+.p-message {
+  .p-message-icon {
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+}
+
+.p-inputnumber-buttons-stacked {
+  .p-inputnumber-button-group {
+    order: -1;
+  }
+}
+
+p-splitter {
+  .p-splitter {
+    flex-direction: row-reverse;
+    border-radius: 1rem;
+    border: none;
+  }
+}
+
+.p-paginator {
+  & > button {
+    transform: rotate(180deg);
+  }
+  .p-dropdown {
+    .p-dropdown-label {
+      padding-right: 0.75rem;
+      padding-left: 0;
+    }
+  }
+}
+
+.p-button {
+  &.p-button-text {
+    flex-direction: row-reverse;
+    font-size: 1.3rem;
+  }
+  .p-button-icon.p-button-icon-left {
+    font-size: 1.3rem;
+
+    margin-left: 0rem;
+    margin-right: 0.5rem;
+  }
+
+  .p-button-icon.p-button-icon-right {
+    margin-left: 0.5rem;
+    margin-right: 0;
+    font-size: 1.3rem;
+  }
+}
+
+p-splitbutton {
+  .p-splitbutton {
+    flex-direction: row-reverse;
+
+    .p-button:not(.p-button-icon-only) {
+      .p-button-icon {
+        margin-right: 0;
+        margin-left: 0.6rem;
+      }
+    }
+  }
+}
+
+.p-tieredmenu {
+  &.p-tieredmenu-overlay {
+    left: initial;
+    right: 0;
+  }
+  .p-menuitem-link {
+    .p-menuitem-icon {
+      margin-right: 0;
+      margin-left: 0.6rem;
+    }
+  }
+}
+
+.p-dialog.p-confirm-dialog {
+  .p-confirm-dialog-message {
+    margin-right: 1rem;
+    margin-left: 0;
+  }
+}
+
+.p-accordion {
+  &-header {
+    &-link {
+      .p-accordion-toggle-icon {
+        margin-right: 0 !important;
+        margin-left: 0.5rem !important;
+      }
+    }
+  }
+}
+
+.p-contextmenu {
+  box-shadow: 0 1px 4px 1px rgb(0 0 0 / 10%);
+  &.p-component {
+    width: 22rem;
+  }
+  .p-submenu-list {
+    box-shadow: 0 1px 4px 1px rgb(0 0 0 / 10%);
+  }
+  .p-menuitem-link {
+    flex-direction: row-reverse;
+    font-size: 1.1rem;
+    .p-menuitem-icon {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+p-picklist {
+  .p-picklist {
+    &.p-component {
+      flex-direction: row-reverse;
+    }
+    & .p-picklist-filter-container .p-picklist-filter-icon {
+      right: initial;
+      left: 0.75rem;
+    }
+  }
+}
+
+.p-autocomplete .p-autocomplete-panel {
+  right: 0;
+  left: initial !important;
+}
+
+.p-inputmask {
+  text-align: left;
+  direction: ltr;
+}
+
+.p-datepicker {
+  left: unset !important;
+  right: 0;
+}
+
+.p-calendar {
+  width: 100%;
+}
+
+.pi-chevron-left:before {
+  content: '\e901';
+}
+
+.pi-chevron-right:before {
+  content: '\e900';
+}
+
+.p-datepicker {
+  background: #fff !important;
+  color: #000 !important;
+  &.p-datepicker-header {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .p-datepicker-prev-icon {
+    color: #000;
+  }
+  .p-datepicker-next-icon {
+    color: #000;
+  }
+  .p-datepicker-calendar-container {
+    font-family: unset !important;
+  }
+  &.p-datepicker-header {
+    font-family: unset !important;
+    &.p-datepicker-title {
+      &.p-datepicker-month {
+        color: #000 !important;
+      }
+    }
+  }
+  // .td.p-datepicker-today>span {
+  //   background:
+  // }
+}
+
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month {
+  color: #000 !important;
+}
+
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year {
+  color: #000 !important;
+}
+
+.p-datepicker table td.p-datepicker-today > span {
+  color: #00b199 !important;
+  background: #d9f2ef !important;
+}
+.p-datepicker table td.p-datepicker-today > span :hover {
+}
+.p-datepicker table td > span.p-highlight {
+  color: rgb(0, 82, 153) !important;
+  background: rgb(182 204 223 / 38%) !important;
+  // color: #00b199 !important;
+  // background: #d9f2ef !important;
+}
+
+.p-datepicker table td.p-datepicker-today > span.p-highlight {
+  color: #00b199 !important;
+  background: #d9f2ef !important;
+}
+
+.p-timepicker {
+  flex-direction: row-reverse;
+  .p-link {
+    color: #000 !important;
+  }
+}
+
+.p-datepicker:not(.p-disabled)
+  table
+  td
+  span:not(.p-highlight):not(.p-disabled):hover {
+  background: #000;
+  color: #fff;
+}
+
+.p-datepicker {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important
+}
+
+.p-datepicker-year {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important
+}
+
+.p-calendar .p-inputtext {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important
+}

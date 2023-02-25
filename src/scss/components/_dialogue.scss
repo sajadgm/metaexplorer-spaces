@@ -1,0 +1,13 @@
+.p-dialog {
+  .p-dialog-header {
+    border-bottom: 1px solid #efefef;
+  }
+  .p-dialog-content {
+    overflow-y: unset;
+  }
+  &.assign-access-customer-groups {
+    .p-dialog-content {
+      overflow-y: auto;
+    }
+  }
+}
